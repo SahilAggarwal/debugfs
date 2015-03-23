@@ -1,0 +1,22 @@
+/home/sahil/eudyptula/task8/hello.c:25:2: warning: initialization from incompatible pointer type [enabled by default]
+  .read = read_id,
+  ^
+/home/sahil/eudyptula/task8/hello.c:25:2: warning: (near initialization for ‘id_fops.read’) [enabled by default]
+/home/sahil/eudyptula/task8/hello.c:27:1: warning: initialization from incompatible pointer type [enabled by default]
+ };
+ ^
+/home/sahil/eudyptula/task8/hello.c:27:1: warning: (near initialization for ‘id_fops.write’) [enabled by default]
+/home/sahil/eudyptula/task8/hello.c: In function ‘create_entry’:
+/home/sahil/eudyptula/task8/hello.c:42:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+/home/sahil/eudyptula/task8/hello.c: In function ‘hello_init’:
+/home/sahil/eudyptula/task8/hello.c:66:7: error: incompatible types when assigning to type ‘char[10]’ from type ‘char *’
+  buff = strcpy(buff,EUDYPTULA_ID); 
+       ^
+/home/sahil/eudyptula/task8/hello.c:63:17: warning: unused variable ‘dir’ [-Wunused-variable]
+  struct dentry *dir;
+                 ^
+make[2]: *** [/home/sahil/eudyptula/task8/hello.o] Error 1
+make[1]: *** [_module_/home/sahil/eudyptula/task8] Error 2
+make: *** [all] Error 2
